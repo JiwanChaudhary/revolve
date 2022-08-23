@@ -1,4 +1,4 @@
-import { Box, IconButton } from "@mui/material"
+import { Box, Button, IconButton } from "@mui/material"
 import { styled } from "@mui/system";
 import { Link } from "react-router-dom";
 import { Colors } from "../../theme";
@@ -71,4 +71,12 @@ export const ContactInfoWrapper = styled(Box)(({ theme }) => ({
 
 export const ContactInfoButton = styled(IconButton)(() => ({
     color: Colors.white, "&:hover": { color: "#fac175" }
+}));
+
+export const SendMessageButton = styled(Button)(() => ({
+    marginTop: "60px",
+    background: Colors.main,
+    color: Colors.white,
+    border: `1.5px solid ${Colors.main}`,
+    "&:hover": { background: Colors.white, color: Colors.main },
 }));

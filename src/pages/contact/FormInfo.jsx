@@ -1,10 +1,23 @@
-import { Box, TextField, Button } from "@mui/material";
-import React from "react";
-import { Colors } from "../../theme";
+import { Box, TextField } from "@mui/material";
+import React, { useState } from "react";
 import SendIcon from "@mui/icons-material/Send";
-import { FormInfoWrapper } from "../../style/contact";
+import { FormInfoWrapper, SendMessageButton } from "../../style/contact";
 
 const FormInfo = () => {
+  const [user, setUser] = useState({
+    fname: "",
+    lname: "",
+    email: "",
+    tel: "",
+    message: "",
+  });
+
+  let name, value;
+  function handleChange(e) {
+    name = e.target.name;
+    value = e.target.value;
+    setUser({ ...user, [name]: value });  
+  }
   return (
     <>
       <FormInfoWrapper>
@@ -20,6 +33,11 @@ const FormInfo = () => {
             variant="standard"
             required
             placeholder="Enter First Name"
+            type="text"
+            name="fname"
+            id="fname"
+            value={user.fname}
+            onChange={handleChange}
           />
           <TextField
             color="secondary"
@@ -27,6 +45,11 @@ const FormInfo = () => {
             variant="standard"
             required
             placeholder="Enter Last Name"
+            type="text"
+            name="lname"
+            id="lname"
+            value={user.lname}
+            onChange={handleChange}
           />
         </Box>
         <Box
@@ -41,6 +64,11 @@ const FormInfo = () => {
             variant="standard"
             required
             placeholder="Enter Email Address"
+            type="email"
+            name="email"
+            id="email"
+            value={user.email}
+            onChange={handleChange}
           />
           <TextField
             color="secondary"
@@ -48,6 +76,11 @@ const FormInfo = () => {
             variant="standard"
             required
             placeholder="Enter Phone Number"
+            type="tel"
+            name="tel"
+            id="tel"
+            value={user.tel}
+            onChange={handleChange}
           />
         </Box>
         <TextField
@@ -56,22 +89,20 @@ const FormInfo = () => {
           variant="standard"
           sx={{ width: "100%" }}
           placeholder="Enter the message"
+          type="text"
+          name="message"
+          id="message"
+          value={user.message}
+          onChange={handleChange}
         />
-        <Button
+        <SendMessageButton
           fullWidth
           disableRipple
           endIcon={<SendIcon />}
           variant="contained"
-          sx={{
-            mt: "60px",
-            background: Colors.main,
-            color: Colors.white,
-            border: `1.5px solid ${Colors.main}`,
-            "&:hover": { background: Colors.white, color: Colors.main },
-          }}
         >
           Send Message
-        </Button>
+        </SendMessageButton>
       </FormInfoWrapper>
     </>
   );

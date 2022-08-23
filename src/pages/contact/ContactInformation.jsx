@@ -19,34 +19,52 @@ const ContactInformation = () => {
         Fill up the form and our team will get back to you within 24 hours.
       </Typography>
       <Box sx={{ lineHeight: "1", mt: "15px" }}>
-        <ContactInfoButton disableRipple>
-          <PhoneEnabledIcon />
-        </ContactInfoButton>
-        <Typography
-          component={"span"}
-          sx={{ ml: "10px", "&:hover": { cursor: "pointer" } }}
+        <Link
+          href="tel: +977-9801827698"
+          target="_blank"
+          style={{ textDecoration: "none", color: "white" }}
         >
-          +977 9862981619
-        </Typography>
+          <ContactInfoButton disableRipple>
+            <PhoneEnabledIcon />
+          </ContactInfoButton>
+          <Typography
+            component={"span"}
+            sx={{ ml: "10px", "&:hover": { cursor: "pointer" } }}
+          >
+            +977 9862981619
+          </Typography>
+        </Link>
       </Box>
       <Box sx={{ lineHeight: "1" }}>
-        <ContactInfoButton disableRipple>
-          <EmailIcon />
-        </ContactInfoButton>
-        <Typography
-          component={"span"}
-          sx={{ ml: "10px", "&:hover": { cursor: "pointer" } }}
+        <Link
+          href="mailto: jeewanchaudhary6@gmail.com, pukar756@gmail.com"
+          target="_blank"
+          style={{ textDecoration: "none", color: "white" }}
         >
-          jeewanchaudhary6@gmail.com
-        </Typography>
+          <ContactInfoButton disableRipple>
+            <EmailIcon />
+          </ContactInfoButton>
+          <Typography
+            component={"span"}
+            sx={{ ml: "10px", "&:hover": { cursor: "pointer" } }}
+          >
+            jeewanchaudhary6@gmail.com
+          </Typography>
+        </Link>
       </Box>
       <Box sx={{ lineHeight: "1" }}>
-        <ContactInfoButton disableRipple>
-          <LocationOnIcon />
-        </ContactInfoButton>
-        <Typography component={"span"} sx={{ ml: "10px" }}>
-          Bhaktapur, Kathmandu, Nepal
-        </Typography>
+        <Link
+          href="https://www.google.com/maps/place/KIST+College+%26+SS/@27.7116758,85.3230166,17z/data=!4m5!3m4!1s0x39eb190f4a71326b:0x1e54c69290d012c6!8m2!3d27.7116758!4d85.3252053"
+          target="_blank"
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          <ContactInfoButton disableRipple>
+            <LocationOnIcon />
+          </ContactInfoButton>
+          <Typography component={"span"} sx={{ ml: "10px" }}>
+            Bhaktapur, Kathmandu, Nepal
+          </Typography>
+        </Link>
       </Box>
       <Box sx={{ mt: "30px" }}>
         <Link
