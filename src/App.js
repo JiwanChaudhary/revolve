@@ -21,6 +21,11 @@ function App() {
               <Home />
             </>
           } />
+          <Route path="/revolve" element={
+            <>
+              <Home />
+            </>
+          } />
           <Route path="/contact" element={
             <>
               <Contact />
