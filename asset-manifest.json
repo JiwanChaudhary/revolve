@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/revolve/static/css/main.64801571.css",
+    "main.js": "/revolve/static/js/main.528758bd.js",
+    "index.html": "/revolve/index.html",
+    "main.64801571.css.map": "/revolve/static/css/main.64801571.css.map",
+    "main.528758bd.js.map": "/revolve/static/js/main.528758bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64801571.css",
+    "static/js/main.528758bd.js"
+  ]
+}
