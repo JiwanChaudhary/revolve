@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/revolve/static/css/main.64801571.css",
-    "main.js": "/revolve/static/js/main.528758bd.js",
+    "main.js": "/revolve/static/js/main.2f18e9d2.js",
     "index.html": "/revolve/index.html",
     "main.64801571.css.map": "/revolve/static/css/main.64801571.css.map",
-    "main.528758bd.js.map": "/revolve/static/js/main.528758bd.js.map"
+    "main.2f18e9d2.js.map": "/revolve/static/js/main.2f18e9d2.js.map"
   },
   "entrypoints": [
     "static/css/main.64801571.css",
-    "static/js/main.528758bd.js"
+    "static/js/main.2f18e9d2.js"
   ]
 }
